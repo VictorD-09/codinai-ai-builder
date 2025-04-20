@@ -1,8 +1,14 @@
-
 import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CourseContent } from "@/components/CourseContent";
+import { getUrlWithUtm } from "@/utils/urlUtils";
 
 export default function Index() {
+  const handleCtaClick = () => {
+    const url = getUrlWithUtm("https://go.perfectpay.com.br/PPU38CPMH30");
+    window.location.href = url;
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -18,7 +24,11 @@ export default function Index() {
             <p className="text-xl text-gray-700 font-medium mb-8">
               👉 Você descreve. A IA gratuita constrói.
             </p>
-            <Button size="lg" className="bg-[#00BFFF] hover:bg-[#00BFFF]/90 text-white px-8 py-6 rounded-full text-lg">
+            <Button 
+              size="lg" 
+              className="bg-[#00BFFF] hover:bg-[#00BFFF]/90 text-white px-8 py-6 rounded-full text-lg"
+              onClick={handleCtaClick}
+            >
               Quero aprender agora <ArrowRight className="ml-2" />
             </Button>
           </div>
@@ -98,45 +108,57 @@ export default function Index() {
         </div>
       </section>
 
-      {/* What You'll Get Section */}
+      {/* Course Content Section */}
       <section className="py-20 bg-gradient-to-b from-[#00BFFF]/5 to-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-              O Que Você Vai Receber
-            </h2>
-            <div className="space-y-6">
-              {[
-                "Acesso completo ao curso CodinAI",
-                "Aulas práticas e rápidas (5 a 8 minutos)",
-                "Modelos prontos e prompts validados",
-                "Ferramentas 100% gratuitas e acessíveis",
-                "Acesso a uma comunidade exclusiva com suporte",
-                "Atualizações vitalícias"
-              ].map((item, index) => (
-                <div key={index} className="flex items-center gap-4 bg-white rounded-lg p-4 shadow-sm">
-                  <Check className="h-6 w-6 text-[#00BFFF]" />
-                  <span className="text-lg text-gray-700">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+            O Conteúdo do Curso CodinAI
+          </h2>
+          <CourseContent />
+          <p className="text-center mt-8 text-gray-600">
+            Todas as ferramentas utilizadas possuem planos gratuitos, perfeitos para quem está começando sem investir em ferramentas caras.
+          </p>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* What You'll Get Section with Pricing */}
       <section className="py-20 bg-[#00BFFF]">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Comece Sua Jornada Agora
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">
+              O Que Você Vai Receber
             </h2>
-            <p className="text-xl mb-8 opacity-90">
-              De R$497 por apenas R$197 (por tempo limitado)
-            </p>
-            <Button size="lg" className="bg-white text-[#00BFFF] hover:bg-gray-100 px-8 py-6 rounded-full text-lg">
-              Quero começar agora <ArrowRight className="ml-2" />
-            </Button>
+            <div className="bg-white text-gray-800 rounded-xl p-8 mb-12">
+              <ul className="space-y-4 text-left mb-8">
+                {[
+                  "✅ Acesso completo ao curso CodinAI",
+                  "✅ 6 módulos práticos com mais de 30 aulas",
+                  "✅ Atualizações vitalícias com novas ferramentas",
+                  "✅ Comunidade exclusiva no Discord",
+                  "✅ Suporte personalizado",
+                  "✅ Certificado de conclusão",
+                  "✅ Bônus: Templates prontos para usar",
+                  "✅ Bônus: Biblioteca de prompts validados",
+                  "✅ Bônus: Guia de otimização de tráfego"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center gap-3 text-lg">
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="text-center">
+                <p className="text-2xl mb-2">De <span className="line-through">R$497</span> por apenas</p>
+                <p className="text-4xl font-bold text-[#00BFFF] mb-6">R$197</p>
+                <p className="text-sm text-gray-600 mb-6">Oferta por tempo limitado</p>
+                <Button 
+                  size="lg" 
+                  className="bg-[#00BFFF] hover:bg-[#00BFFF]/90 text-white px-8 py-6 rounded-full text-lg w-full md:w-auto"
+                  onClick={handleCtaClick}
+                >
+                  Quero começar agora <ArrowRight className="ml-2" />
+                </Button>
+              </div>
+            </div>
             <p className="mt-6 text-sm opacity-75">
               🔒 Garantia incondicional de 7 dias
             </p>
