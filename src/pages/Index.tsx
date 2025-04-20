@@ -3,35 +3,26 @@ import { Button } from "@/components/ui/button";
 import { CourseContent } from "@/components/CourseContent";
 import { getUrlWithUtm } from "@/utils/urlUtils";
 import PricingCard from "@/components/PricingCard";
+import { CardFooter } from "@/components/ui/card";
 
 export default function Index() {
   const handleCtaClick = () => {
-    const url = getUrlWithUtm("https://go.perfectpay.com.br/PPU38CPMH30");
+    const url = getUrlWithUtm("https://pay.kiwify.com.br/ffU3D5d");
     window.location.href = url;
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen  bg-gray-900 ">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#00BFFF]/10 to-white pt-20 pb-16 md:pt-32 md:pb-24">
+      <section className="relative overflow-hidde pb-16 md:pt-32 md:pb-24">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Crie Sites, Apps, Páginas de Vendas e até SaaS com Inteligência Artificial
+          <div className="text-center max-w-4xl mx-auto pt-10">
+            <h1 className="text-3xl md:text-6xl font-bold text-[#00BFFF] mb-6">
+              Domine a IA e Crie Qualquer Projeto Digital do Zero — Mesmo Sem Saber Programar
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8">
-              Mesmo que você nunca tenha programado na vida. Usando apenas ferramentas de IA gratuitas.
+            <p className="text-xl md:text-2xl text-gray-400 mb-8">
+              No curso, você aprende a usar IA gratuita para criar sites, páginas de vendas, aplicativos e até SaaS, apenas descrevendo o que quer.
             </p>
-            <p className="text-xl text-gray-700 font-medium mb-8">
-              👉 Você descreve. A IA gratuita constrói.
-            </p>
-            <Button 
-              size="lg" 
-              className="bg-[#00BFFF] hover:bg-[#00BFFF]/90 text-white px-8 py-6 rounded-full text-lg"
-              onClick={handleCtaClick}
-            >
-              Quero aprender agora <ArrowRight className="ml-2" />
-            </Button>
           </div>
         </div>
       </section>
@@ -41,27 +32,12 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-              Você já quis ter seu próprio site, aplicativo ou plataforma…
-              <br />Mas travou por não saber por onde começar?
+              Você já quis ter seu próprio site, app ou até uma plataforma, mas travou por não saber por onde começar — ou porque não tinha dinheiro pra contratar alguém?
             </h2>
-            <div className="space-y-6 text-left">
-              {[
-                "Já gastou dinheiro com agências e não teve resultado",
-                "Tentou aprender programação, mas ficou perdido",
-                "Tem uma ideia incrível, mas não tem conhecimento técnico",
-                "Quer vender mais no digital, mas não tem presença online"
-              ].map((item, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="rounded-full bg-[#00BFFF]/10 p-2">
-                    <Check className="h-6 w-6 text-[#00BFFF]" />
-                  </div>
-                  <p className="text-lg text-gray-700">{item}</p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-12 text-xl text-gray-700 font-medium">
-              Você não está sozinho — e a solução agora está nas suas mãos.
+            <p className="text-2xl   font-semibold  text-gray-600 ">Com a Inteligência Artificial, você não precisa mais depender de programadores caros nem passar meses tentando aprender código. Agora, basta descrever o que você quer... e a IA faz pra você.
+
             </p>
+
           </div>
         </div>
       </section>
@@ -71,31 +47,32 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                O CodinAI é um curso prático, direto ao ponto e feito pra você
+              <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] mb-6">
+                O CodinAI é um curso prático, direto ao ponto e com foco em resultados rapidos.
               </h2>
+              <p className="text-2xl text-gray-500">Em poucos minutos você conseguir criar o que precisa sem gastar 1 centavo com ferramentas ou AI, você vai conseguir criar:</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
                   icon: <RocketIcon className="h-8 w-8 text-[#00BFFF]" />,
                   title: "Landing Pages profissionais",
-                  description: "Crie páginas de alta conversão em minutos"
+                  description: "Crie páginas de alta conversão em poucos minutos, perfeitas para capturar leads, vender produtos ou divulgar seu serviço com visual moderno e otimizado."
                 },
                 {
                   icon: <MessageSquare className="h-8 w-8 text-[#00BFFF]" />,
                   title: "Websites completos",
-                  description: "Desenvolva sites com várias seções"
+                  description: "Desenvolva sites com várias seções como 'Sobre', 'Serviços', 'Contato' e muito mais, tudo de forma visual, rápida e sem precisar escrever uma linha de código."
                 },
                 {
                   icon: <Star className="h-8 w-8 text-[#00BFFF]" />,
                   title: "Aplicativos mobile",
-                  description: "Crie apps funcionais sem código"
+                  description: "Crie aplicativos funcionais para Android e iOS apenas descrevendo o que precisa. Ideal para validar ideias, criar MVPs ou lançar no mercado com rapidez."
                 },
                 {
                   icon: <Users className="h-8 w-8 text-[#00BFFF]" />,
                   title: "SaaS que funcionam",
-                  description: "Monte seu próprio software como serviço"
+                  description: "Monte seu próprio Software como Serviço com login de usuários, painel administrativo, planos pagos e integrações — tudo isso com ajuda da IA."
                 }
               ].map((item, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
@@ -110,107 +87,64 @@ export default function Index() {
       </section>
 
       {/* Course Content Section */}
-      <section className="py-20 bg-gradient-to-b from-[#00BFFF]/5 to-white">
+      <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            O Conteúdo do Curso CodinAI
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#00BFFF] mb-12">
+            Este sera o conteúdo que você vai aprender no curso:
           </h2>
           <CourseContent />
-          <p className="text-center mt-8 text-gray-600">
+          <p className="text-center mt-8 font-semibold text-gray-300">
             Todas as ferramentas utilizadas possuem planos gratuitos, perfeitos para quem está começando sem investir em ferramentas caras.
           </p>
         </div>
       </section>
 
       {/* Pricing Section with Content */}
-      <section className="relative py-20 bg-white">
+      <section className="relative py-20 ">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Plano de Acesso
+              <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] mb-6">
+                Oferta Especial para novos integrantes
               </h2>
-              <p className="text-lg text-gray-600">
-                Comece agora mesmo e desbloqueie todo o potencial da IA
+              <p className="text-lg text-gray-400 font-semibold ">
+                Comece agora mesmo e desbloque o curso e todos os bônus exclusivos
               </p>
             </div>
             <div className="relative z-10">
               <PricingCard />
             </div>
-            <div className="bg-white text-gray-800 rounded-xl p-8 mt-[-2rem] relative z-0 shadow-lg border border-gray-100">
-              <ul className="space-y-4 text-left mb-8">
+            <div className="bg-[#00BFFF] text-gray-800 rounded-xl p-8 mt-[-2rem] relative z-0 shadow-lg border border-gray-100">
+              <ul className="space-y-4 mt-6 text-left mb-8">
                 {[
                   "Acesso completo ao curso CodinAI",
                   "6 módulos práticos com mais de 30 aulas",
                   "Atualizações vitalícias com novas ferramentas",
-                  "Comunidade exclusiva no Discord",
-                  "Suporte personalizado",
-                  "Certificado de conclusão",
+                  "Comunidade exclusiva no Whatsapp",
+                  "Suporte direto com o professor",
                   "Bônus: Templates prontos para usar",
-                  "Bônus: Biblioteca de prompts validados",
-                  "Bônus: Guia de otimização de tráfego"
+                  "Bônus: Biblioteca de prompts validados"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3 text-lg">
-                    <Circle className="h-4 w-4 text-[#00BFFF]" />
-                    <span>{item}</span>
+                    <Circle className="h-4 w-4 text-gray-800" />
+                    <span className="text-gray-800 font-semibold">{item}</span>
                   </li>
                 ))}
               </ul>
+              <Button
+                onClick={handleCtaClick}
+                className="w-full bg-green-600 hover:bg-green-500/90  hover:text-white text-white py-6 text-lg"
+              >
+                Quero começar agora
+              </Button>
             </div>
-            <p className="text-center mt-8 text-gray-600">
-              🔒 Garantia incondicional de 7 dias
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* What You'll Get Section with Pricing */}
-      <section className="py-20 bg-[#00BFFF]">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              O Que Você Vai Receber
-            </h2>
-            <div className="bg-white text-gray-800 rounded-xl p-8 mb-12">
-              <ul className="space-y-4 text-left mb-8">
-                {[
-                  "✅ Acesso completo ao curso CodinAI",
-                  "✅ 6 módulos práticos com mais de 30 aulas",
-                  "✅ Atualizações vitalícias com novas ferramentas",
-                  "✅ Comunidade exclusiva no Discord",
-                  "✅ Suporte personalizado",
-                  "✅ Certificado de conclusão",
-                  "✅ Bônus: Templates prontos para usar",
-                  "✅ Bônus: Biblioteca de prompts validados",
-                  "✅ Bônus: Guia de otimização de tráfego"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3 text-lg">
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="text-center">
-                <p className="text-2xl mb-2">De <span className="line-through">R$497</span> por apenas</p>
-                <p className="text-4xl font-bold text-[#00BFFF] mb-6">R$197</p>
-                <p className="text-sm text-gray-600 mb-6">Oferta por tempo limitado</p>
-                <Button 
-                  size="lg" 
-                  className="bg-[#00BFFF] hover:bg-[#00BFFF]/90 text-white px-8 py-6 rounded-full text-lg w-full md:w-auto"
-                  onClick={handleCtaClick}
-                >
-                  Quero começar agora <ArrowRight className="ml-2" />
-                </Button>
-              </div>
-            </div>
-            <p className="mt-6 text-sm opacity-75">
-              🔒 Garantia incondicional de 7 dias
-            </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">
             © 2024 CodinAI. Todos os direitos reservados.
