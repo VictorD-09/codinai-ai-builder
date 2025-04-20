@@ -12,7 +12,7 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-900 ">
       {/* Hero Section */}
       <section className="relative overflow-hidde pb-16 md:pt-32 md:pb-24">
         <div className="container mx-auto px-4">
@@ -149,17 +149,17 @@ export default function Index() {
           <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
             <div className="w-full md:w-1/2">
               <img
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+                src="/autor.jpg"
                 alt="Victor Bertram"
-                className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+                className="rounded-2xl shadow-2xl  object-contains"
               />
             </div>
             <div className="w-full md:w-1/2 space-y-6">
               <div className="space-y-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF]">
-                  Victor Bertram — seu mentor nessa jornada com a IA
+                  Sou Victor bertram, Especialista em Desenvolvimento Web e Entusiasta de IA
                 </h2>
-                <div className="space-y-4 text-gray-600 text-lg">
+                <div className="space-y-4 text-gray-400 font-semibold text-lg">
                   <p>
                     Sou Desenvolvedor Full Stack com mais de 4 anos de experiência prática na criação de aplicativos, sites, plataformas SaaS e micro-SaaS.
                   </p>
@@ -177,7 +177,7 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="text-white py-12">
+      <footer className="text-white py-4">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">
             © 2024 CodinAI. Todos os direitos reservados.
