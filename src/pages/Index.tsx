@@ -122,20 +122,42 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="py-20 bg-[#00BFFF]">
+      {/* Pricing Section with Content */}
+      <section className="relative py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Plano de Acesso
               </h2>
-              <p className="text-lg text-white/90">
+              <p className="text-lg text-gray-600">
                 Comece agora mesmo e desbloqueie todo o potencial da IA
               </p>
             </div>
-            <PricingCard />
-            <p className="text-center mt-8 text-white/80">
+            <div className="relative z-10">
+              <PricingCard />
+            </div>
+            <div className="bg-white text-gray-800 rounded-xl p-8 mt-[-2rem] relative z-0 shadow-lg border border-gray-100">
+              <ul className="space-y-4 text-left mb-8">
+                {[
+                  "Acesso completo ao curso CodinAI",
+                  "6 módulos práticos com mais de 30 aulas",
+                  "Atualizações vitalícias com novas ferramentas",
+                  "Comunidade exclusiva no Discord",
+                  "Suporte personalizado",
+                  "Certificado de conclusão",
+                  "Bônus: Templates prontos para usar",
+                  "Bônus: Biblioteca de prompts validados",
+                  "Bônus: Guia de otimização de tráfego"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center gap-3 text-lg">
+                    <Circle className="h-4 w-4 text-[#00BFFF]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <p className="text-center mt-8 text-gray-600">
               🔒 Garantia incondicional de 7 dias
             </p>
           </div>
