@@ -12,7 +12,7 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen  bg-gray-900 ">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative overflow-hidde pb-16 md:pt-32 md:pb-24">
         <div className="container mx-auto px-4">
@@ -139,6 +139,39 @@ export default function Index() {
               </Button>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Specialist Section */}
+      <section className="py-20 relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
+            <div className="w-full md:w-1/2">
+              <img
+                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+                alt="Victor Bertram"
+                className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+              />
+            </div>
+            <div className="w-full md:w-1/2 space-y-6">
+              <div className="space-y-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF]">
+                  Victor Bertram — seu mentor nessa jornada com a IA
+                </h2>
+                <div className="space-y-4 text-gray-600 text-lg">
+                  <p>
+                    Sou Desenvolvedor Full Stack com mais de 4 anos de experiência prática na criação de aplicativos, sites, plataformas SaaS e micro-SaaS.
+                  </p>
+                  <p>
+                    Domino diversas tecnologias e linguagens de programação — de JavaScript a Python, passando por React, Node.js, .NET e muito mais.
+                  </p>
+                  <p>
+                    Já participei do desenvolvimento de projetos que somam mais de R$ 150 mil reais em faturamento, seja por lançamentos ou vendas diretas.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
