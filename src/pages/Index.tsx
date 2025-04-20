@@ -2,6 +2,7 @@ import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon } from "lucid
 import { Button } from "@/components/ui/button";
 import { CourseContent } from "@/components/CourseContent";
 import { getUrlWithUtm } from "@/utils/urlUtils";
+import PricingCard from "@/components/PricingCard";
 
 export default function Index() {
   const handleCtaClick = () => {
