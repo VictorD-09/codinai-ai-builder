@@ -4,11 +4,13 @@ import { CourseContent } from "@/components/CourseContent";
 import { getUrlWithUtm } from "@/utils/urlUtils";
 import PricingCard from "@/components/PricingCard";
 import FAQSection from "@/components/FAQSection";
+
 export default function Index() {
   const handleCtaClick = () => {
     const url = getUrlWithUtm("https://pay.kiwify.com.br/ffU3D5d");
     window.location.href = url;
   };
+
   return <div className="min-h-screen bg-gray-900">
       {/* Hero Section */}
       <section className="relative overflow-hidde pb-16 md:pt-32 md:pb-24">
@@ -58,7 +60,7 @@ export default function Index() {
             }, {
               icon: <MessageSquare className="h-8 w-8 text-[#00BFFF]" />,
               title: "Websites completos",
-              description: "Desenvolva sites com várias seções como 'Sobre', 'Serviços', 'Contato' e muito mais, tudo de forma visual, rápida e sem precisar escrever uma linha de código."
+              description: "Desenvolva sites com várias seções como 'Sobre', 'Serviços', 'Contato' e muito mais, tudo de forma visual, rápida e sem precisar escrever uma linha de c��digo."
             }, {
               icon: <Star className="h-8 w-8 text-[#00BFFF]" />,
               title: "Aplicativos mobile",
@@ -115,6 +117,73 @@ export default function Index() {
               <Button onClick={handleCtaClick} className="w-full bg-green-600 hover:bg-green-500/90  hover:text-white text-white py-6 text-lg">
                 Quero começar agora
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] text-center mb-12">
+              Sua jornada para dominar a criação digital
+            </h2>
+            
+            <div className="relative space-y-8">
+              {/* Timeline line */}
+              <div className="absolute left-9 top-5 bottom-5 w-0.5 bg-[#00BFFF]/30"></div>
+
+              {/* Timeline items */}
+              <div className="relative flex items-start gap-6">
+                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
+                  Passo 1
+                </div>
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Comece sem conhecimento prévio</h3>
+                  <p className="text-gray-600">Não precisa saber programar! O curso foi especialmente projetado para iniciantes, com uma abordagem passo a passo que utiliza inteligência artificial para facilitar seu aprendizado.</p>
+                </div>
+              </div>
+
+              <div className="relative flex items-start gap-6">
+                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
+                  Passo 2
+                </div>
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Ferramentas gratuitas ao seu alcance</h3>
+                  <p className="text-gray-600">Comece seu projeto sem investimento extra! Utilizamos apenas ferramentas com versões gratuitas, permitindo que você aprenda e crie sem gastar nada além do curso.</p>
+                </div>
+              </div>
+
+              <div className="relative flex items-start gap-6">
+                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
+                  Passo 3
+                </div>
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Aprenda no seu ritmo</h3>
+                  <p className="text-gray-600">Com 12 meses de acesso ao conteúdo e atualizações constantes, você tem todo o tempo necessário para dominar as habilidades e acompanhar as novidades do mercado.</p>
+                </div>
+              </div>
+
+              <div className="relative flex items-start gap-6">
+                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
+                  Passo 4
+                </div>
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Crie projetos profissionais</h3>
+                  <p className="text-gray-600">Desenvolva SaaS completos com funcionalidades reais como login, painéis de usuário, sistemas de pagamento e integrações - tudo usando IA para acelerar seu desenvolvimento.</p>
+                </div>
+              </div>
+
+              <div className="relative flex items-start gap-6">
+                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
+                  Passo 5
+                </div>
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Suporte contínuo</h3>
+                  <p className="text-gray-600">Nunca fique sozinho! Tenha acesso exclusivo ao grupo do WhatsApp e suporte direto do professor para tirar todas as suas dúvidas durante a jornada.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
