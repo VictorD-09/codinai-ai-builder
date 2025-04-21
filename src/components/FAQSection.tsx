@@ -2,7 +2,6 @@
 // Como o usuário pediu FAQ com pelo menos 5 perguntas, já temos um componente FAQSection no projeto com 5 perguntas e o botão para WhatsApp.
 // Vou aproveitar e garantir que o botão linka para o número e a mensagem indicada.
 
-import React from "react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Circle } from "lucide-react";
@@ -30,14 +29,14 @@ const FAQS = [
   }
 ];
 
-const whatsappNumber = "5549998218294";
+const whatsappNumber = "554998218294";
 const whatsappMessage = "Tenho interesse no curso CodinAi quero saber mais";
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
 export default function FAQSection() {
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto max-w-3xl px-4">
+      <div className=" mx-auto max-w-3xl px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] text-center mb-10">
           Perguntas Frequentes
         </h2>
@@ -54,20 +53,15 @@ export default function FAQSection() {
             </AccordionItem>
           ))}
         </Accordion>
-        <div className="flex justify-center">
           <Button
-            asChild
-            className="bg-[#25D366] hover:bg-[#128C7E] text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg transition"
+            onClick={() => window.open(whatsappUrl, "_blank")}
+            style={{whiteSpace: "wrap"}}
+            className="bg-[#25D366] w-full py-[2rem] hover:bg-[#128C7E] text-white text-lg font-bold rounded-full shadow-lg "
           >
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Fale com o Especialista no WhatsApp
-            </a>
+            
+            Tem uma dúvida?<br/> Fale comigo no WhatsApp
+           
           </Button>
-        </div>
       </div>
     </section>
   );

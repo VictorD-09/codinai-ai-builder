@@ -13,11 +13,12 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-900">
       {/* Hero Section */}
       <section className="relative overflow-hidde pb-16 md:pt-32 md:pb-24">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto pt-10">
+            <img className="mx-auto" width="220" src="/logo.png" alt="logo" />
             <h1 className="text-3xl md:text-6xl font-bold text-[#00BFFF] mb-6">
               Domine a IA e Crie Qualquer Projeto Digital do Zero — Mesmo Sem Saber Programar
             </h1>
@@ -112,7 +113,7 @@ export default function Index() {
                 Comece agora mesmo e desbloque o curso e todos os bônus exclusivos
               </p>
             </div>
-            <div className="relative z-20 -mt-40 mb-12 flex justify-center">
+            <div className="relative z-20 flex justify-center">
               <PricingCard />
             </div>
             <div className="bg-[#00BFFF] text-gray-800 rounded-xl p-8 mt-[-2rem] relative z-0 shadow-lg border border-gray-100">
@@ -146,11 +147,11 @@ export default function Index() {
       {/* Especialista Section */}
       <section className="relative py-20 bg-gradient-to-br from-[#e6f7fb] to-white overflow-hidden">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-4 max-w-4xl">
-          <div className="w-full md:w-1/2 flex justify-center">
+          <div className="w-full flex justify-center">
             <img
               src="/autor.jpg"
               alt="Victor Bertram"
-              className="rounded-2xl shadow-2xl object-cover w-64 h-64 md:w-80 md:h-80 border-4 border-[#00BFFF] bg-white"
+              className="rounded-2xl shadow-2xl  md:w-80 md:h-80 border-4 border-[#00BFFF] bg-white"
             />
           </div>
           <div className="w-full md:w-1/2 space-y-4 text-gray-700">
