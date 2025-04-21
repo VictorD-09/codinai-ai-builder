@@ -27,20 +27,73 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Pain Points Section */}
-      <section className="py-20 bg-gray-50">
+        {/* Timeline Section */}
+        <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-              Você já quis ter seu próprio site, app ou até uma plataforma, mas travou por não saber por onde começar — ou porque não tinha dinheiro pra contratar alguém?
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] text-center mb-12">
+              Sua jornada para dominar a criação digital
             </h2>
-            <p className="text-2xl   font-semibold  text-gray-600 ">Com a Inteligência Artificial, você não precisa mais depender de programadores caros nem passar meses tentando aprender código. Agora, basta descrever o que você quer... e a IA faz pra você.
+            
+            <div className="relative space-y-8">
+              {/* Timeline line */}
+              <div className="absolute left-9 top-5 bottom-5 w-0.5 bg-[#00BFFF]/30"></div>
 
-            </p>
+              {/* Timeline items */}
+              <div className="relative flex items-start gap-6">
+                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
+                  Passo 1
+                </div>
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Comece sem conhecimento prévio</h3>
+                  <p className="text-gray-600">Não precisa saber programar! O curso foi especialmente projetado para iniciantes, com uma abordagem passo a passo que utiliza inteligência artificial para facilitar seu aprendizado.</p>
+                </div>
+              </div>
 
+              <div className="relative flex items-start gap-6">
+                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
+                  Passo 2
+                </div>
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Ferramentas gratuitas ao seu alcance</h3>
+                  <p className="text-gray-600">Comece seu projeto sem investimento extra! Utilizamos apenas ferramentas com versões gratuitas, permitindo que você aprenda e crie sem gastar nada além do curso.</p>
+                </div>
+              </div>
+
+              <div className="relative flex items-start gap-6">
+                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
+                  Passo 3
+                </div>
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Aprenda no seu ritmo</h3>
+                  <p className="text-gray-600">Com 12 meses de acesso ao conteúdo e atualizações constantes, você tem todo o tempo necessário para dominar as habilidades e acompanhar as novidades do mercado.</p>
+                </div>
+              </div>
+
+              <div className="relative flex items-start gap-6">
+                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
+                  Passo 4
+                </div>
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Crie projetos profissionais</h3>
+                  <p className="text-gray-600">Desenvolva SaaS completos com funcionalidades reais como login, painéis de usuário, sistemas de pagamento e integrações - tudo usando IA para acelerar seu desenvolvimento.</p>
+                </div>
+              </div>
+
+              <div className="relative flex items-start gap-6">
+                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
+                  Passo 5
+                </div>
+                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Suporte contínuo</h3>
+                  <p className="text-gray-600">Nunca fique sozinho! Tenha acesso exclusivo ao grupo do WhatsApp e suporte direto do professor para tirar todas as suas dúvidas durante a jornada.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
 
       {/* Solution Section */}
       <section className="py-20">
@@ -122,73 +175,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Timeline Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] text-center mb-12">
-              Sua jornada para dominar a criação digital
-            </h2>
-            
-            <div className="relative space-y-8">
-              {/* Timeline line */}
-              <div className="absolute left-9 top-5 bottom-5 w-0.5 bg-[#00BFFF]/30"></div>
-
-              {/* Timeline items */}
-              <div className="relative flex items-start gap-6">
-                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
-                  Passo 1
-                </div>
-                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Comece sem conhecimento prévio</h3>
-                  <p className="text-gray-600">Não precisa saber programar! O curso foi especialmente projetado para iniciantes, com uma abordagem passo a passo que utiliza inteligência artificial para facilitar seu aprendizado.</p>
-                </div>
-              </div>
-
-              <div className="relative flex items-start gap-6">
-                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
-                  Passo 2
-                </div>
-                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Ferramentas gratuitas ao seu alcance</h3>
-                  <p className="text-gray-600">Comece seu projeto sem investimento extra! Utilizamos apenas ferramentas com versões gratuitas, permitindo que você aprenda e crie sem gastar nada além do curso.</p>
-                </div>
-              </div>
-
-              <div className="relative flex items-start gap-6">
-                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
-                  Passo 3
-                </div>
-                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Aprenda no seu ritmo</h3>
-                  <p className="text-gray-600">Com 12 meses de acesso ao conteúdo e atualizações constantes, você tem todo o tempo necessário para dominar as habilidades e acompanhar as novidades do mercado.</p>
-                </div>
-              </div>
-
-              <div className="relative flex items-start gap-6">
-                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
-                  Passo 4
-                </div>
-                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Crie projetos profissionais</h3>
-                  <p className="text-gray-600">Desenvolva SaaS completos com funcionalidades reais como login, painéis de usuário, sistemas de pagamento e integrações - tudo usando IA para acelerar seu desenvolvimento.</p>
-                </div>
-              </div>
-
-              <div className="relative flex items-start gap-6">
-                <div className="flex-none w-20 h-20 rounded-full bg-[#00BFFF] flex items-center justify-center text-white font-bold">
-                  Passo 5
-                </div>
-                <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Suporte contínuo</h3>
-                  <p className="text-gray-600">Nunca fique sozinho! Tenha acesso exclusivo ao grupo do WhatsApp e suporte direto do professor para tirar todas as suas dúvidas durante a jornada.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+   
       {/* Especialista Section */}
       <section className="relative py-20 bg-gradient-to-br from-[#e6f7fb] to-white overflow-hidden">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-4 max-w-4xl">
