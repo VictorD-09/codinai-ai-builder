@@ -1,9 +1,11 @@
-import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon, Circle } from "lucide-react";
+import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CourseContent } from "@/components/CourseContent";
 import { getUrlWithUtm } from "@/utils/urlUtils";
 import PricingCard from "@/components/PricingCard";
 import FAQSection from "@/components/FAQSection";
+import Timeline from "@/components/Timeline";
+import "../styles/timeline.css";
 
 export default function Index() {
   const handleCtaClick = () => {
@@ -27,74 +29,17 @@ export default function Index() {
         </div>
       </section>
 
-        {/* Timeline Section */}
-        <section className="py-20 bg-gray-900">
-  <div className="container mx-auto px-4">
-    <div className="max-w-4xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] text-center mb-12">
-        Sua jornada para dominar a criação digital
-      </h2>
-      
-      <div className="relative">
-        {/* Timeline line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-orange-500 to-orange-600" />
-
-        {[
-          {
-            title: "Comece sem conhecimento prévio",
-            content: "Não precisa saber programar! O curso é totalmente focado em pessoas sem experiência prévia em programação, guiando passo a passo e utilizando inteligência artificial.",
-            align: "left"
-          },
-          {
-            title: "Ferramentas gratuitas ao seu alcance",
-            content: "Todas as ferramentas apresentadas no curso possuem versões gratuitas, perfeitas para começar sem nenhum investimento extra além do curso.",
-            align: "right"
-          },
-          {
-            title: "Aprenda no seu ritmo",
-            content: "Você terá acesso por 12 meses ao conteúdo e a todas as atualizações feitas durante este período, além da comunidade exclusiva para tirar suas dúvidas.",
-            align: "left"
-          },
-          {
-            title: "Crie projetos profissionais",
-            content: "Você vai aprender a criar plataformas SaaS com funcionalidades reais, incluindo login, painel de usuário, pagamentos e integrações.",
-            align: "right"
-          },
-          {
-            title: "Suporte contínuo",
-            content: "Você terá acesso ao grupo exclusivo no WhatsApp e suporte direto com o professor para ajudar em qualquer etapa da sua jornada.",
-            align: "left"
-          }
-        ].map((item, index) => (
-          <div key={index} className={`relative flex items-center mb-16 ${
-            item.align === "right" ? "flex-row-reverse" : ""
-          }`}>
-            {/* Dot */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4">
-              <div className="w-4 h-4 bg-orange-500 rounded-full border-4 border-gray-900" />
-            </div>
-
-            {/* Content */}
-            <div className={`w-5/12 ${item.align === "right" ? "pl-12" : "pr-12"}`}>
-              <div className="p-6 rounded-xl bg-gray-800/80 backdrop-blur-sm border border-gray-700 shadow-xl">
-                <h3 className="text-xl font-semibold text-orange-500 mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-gray-300">
-                  {item.content}
-                </p>
-              </div>
-            </div>
-
-            {/* Spacer for the other side */}
-            <div className="w-5/12" />
+      {/* Timeline Section */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] text-center mb-12">
+              Sua jornada para dominar a criação digital
+            </h2>
+            <Timeline />
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
-
+        </div>
+      </section>
 
       {/* Solution Section */}
       <section className="py-20">
@@ -108,26 +53,26 @@ export default function Index() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               {[{
-              icon: <RocketIcon className="h-8 w-8 text-[#00BFFF]" />,
-              title: "Landing Pages profissionais",
-              description: "Crie páginas de alta conversão em poucos minutos, perfeitas para capturar leads, vender produtos ou divulgar seu serviço com visual moderno e otimizado."
-            }, {
-              icon: <MessageSquare className="h-8 w-8 text-[#00BFFF]" />,
-              title: "Websites completos",
-              description: "Desenvolva sites com várias seções como 'Sobre', 'Serviços', 'Contato' e muito mais, tudo de forma visual, rápida e sem precisar escrever uma linha de cdigo."
-            }, {
-              icon: <Star className="h-8 w-8 text-[#00BFFF]" />,
-              title: "Aplicativos mobile",
-              description: "Crie aplicativos funcionais para Android e iOS apenas descrevendo o que precisa. Ideal para validar ideias, criar MVPs ou lançar no mercado com rapidez."
-            }, {
-              icon: <Users className="h-8 w-8 text-[#00BFFF]" />,
-              title: "SaaS que funcionam",
-              description: "Monte seu próprio Software como Serviço com login de usuários, painel administrativo, planos pagos e integrações — tudo isso com ajuda da IA."
-            }].map((item, index) => <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                  <div className="mb-4">{item.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-gray-600">{item.description}</p>
-                </div>)}
+                icon: <RocketIcon className="h-8 w-8 text-[#00BFFF]" />,
+                title: "Landing Pages profissionais",
+                description: "Crie páginas de alta conversão em poucos minutos, perfeitas para capturar leads, vender produtos ou divulgar seu serviço com visual moderno e otimizado."
+              }, {
+                icon: <MessageSquare className="h-8 w-8 text-[#00BFFF]" />,
+                title: "Websites completos",
+                description: "Desenvolva sites com várias seções como 'Sobre', 'Serviços', 'Contato' e muito mais, tudo de forma visual, rápida e sem precisar escrever uma linha de cdigo."
+              }, {
+                icon: <Star className="h-8 w-8 text-[#00BFFF]" />,
+                title: "Aplicativos mobile",
+                description: "Crie aplicativos funcionais para Android e iOS apenas descrevendo o que precisa. Ideal para validar ideias, criar MVPs ou lançar no mercado com rapidez."
+              }, {
+                icon: <Users className="h-8 w-8 text-[#00BFFF]" />,
+                title: "SaaS que funcionam",
+                description: "Monte seu próprio Software como Serviço com login de usuários, painel administrativo, planos pagos e integrações — tudo isso com ajuda da IA."
+              }].map((item, index) => <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div className="mb-4">{item.icon}</div>
+                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p className="text-gray-600">{item.description}</p>
+                  </div>)}
             </div>
           </div>
         </div>
@@ -176,7 +121,6 @@ export default function Index() {
         </div>
       </section>
 
-   
       {/* Especialista Section */}
       <section className="relative py-20 bg-gradient-to-br from-[#e6f7fb] to-white overflow-hidden">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-4 max-w-4xl">
