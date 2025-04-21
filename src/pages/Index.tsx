@@ -124,7 +124,7 @@ export default function Index() {
       <section className="relative py-20 bg-gradient-to-br from-[#e6f7fb] to-white overflow-hidden">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-4 max-w-4xl">
           <div className="w-full">
-            <img src="/autor.jpg" alt="Victor Bertram" className="rounded-2xl shadow-2xl md:w-80 md:h-80 border-4 border-[#00BFFF] bg-white object-cover" />
+            <img src="/autor.jpg" alt="Victor Bertram" className="rounded-2xl shadow-2xl border-4 border-[#00BFFF] bg-white object-cover" />
           </div>
           <div className="w-full md:w-1/2 space-y-4 text-gray-700">
             <h3 className="text-2xl md:text-3xl font-bold text-[#00BFFF]">
