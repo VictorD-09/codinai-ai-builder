@@ -1,9 +1,9 @@
+
 import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon, Circle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CourseContent } from "@/components/CourseContent";
 import { getUrlWithUtm } from "@/utils/urlUtils";
 import PricingCard from "@/components/PricingCard";
-import { CardFooter } from "@/components/ui/card";
 import FAQSection from "@/components/FAQSection";
 
 export default function Index() {
@@ -184,3 +184,4 @@ export default function Index() {
     </div>
   );
 }
+

@@ -1,4 +1,7 @@
 
+// Como o usuário pediu FAQ com pelo menos 5 perguntas, já temos um componente FAQSection no projeto com 5 perguntas e o botão para WhatsApp.
+// Vou aproveitar e garantir que o botão linka para o número e a mensagem indicada.
+
 import React from "react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
@@ -69,3 +72,4 @@ export default function FAQSection() {
     </section>
   );
 }
+
