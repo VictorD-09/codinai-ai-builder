@@ -4,6 +4,7 @@ import { CourseContent } from "@/components/CourseContent";
 import { getUrlWithUtm } from "@/utils/urlUtils";
 import PricingCard from "@/components/PricingCard";
 import { CardFooter } from "@/components/ui/card";
+import FAQSection from "@/components/FAQSection";
 
 export default function Index() {
   const handleCtaClick = () => {
@@ -12,7 +13,7 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 ">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative overflow-hidde pb-16 md:pt-32 md:pb-24">
         <div className="container mx-auto px-4">
@@ -111,7 +112,7 @@ export default function Index() {
                 Comece agora mesmo e desbloque o curso e todos os bônus exclusivos
               </p>
             </div>
-            <div className="relative z-10">
+            <div className="relative z-20 -mt-40 mb-12 flex justify-center">
               <PricingCard />
             </div>
             <div className="bg-[#00BFFF] text-gray-800 rounded-xl p-8 mt-[-2rem] relative z-0 shadow-lg border border-gray-100">
@@ -138,48 +139,44 @@ export default function Index() {
                 Quero começar agora
               </Button>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* Specialist Section */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
-            <div className="w-full md:w-1/2">
-              <img
-                src="/autor.jpg"
-                alt="Victor Bertram"
-                className="rounded-2xl shadow-2xl  object-contains"
-              />
-            </div>
-            <div className="w-full md:w-1/2 space-y-6">
-              <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF]">
-                  Sou Victor bertram, Especialista em Desenvolvimento Web e Entusiasta de IA
-                </h2>
-                <div className="space-y-4 text-gray-400 font-semibold text-lg">
-                  <p>
-                    Sou Desenvolvedor Full Stack com mais de 4 anos de experiência prática na criação de aplicativos, sites, plataformas SaaS e micro-SaaS.
-                  </p>
-                  <p>
-                    Domino diversas tecnologias e linguagens de programação — de JavaScript a Python, passando por React, Node.js, .NET e muito mais.
-                  </p>
-                  <p>
-                    Já participei do desenvolvimento de projetos que somam mais de R$ 150 mil reais em faturamento, seja por lançamentos ou vendas diretas.
-                  </p>
-                </div>
-              </div>
-            </div>
+      {/* Especialista Section */}
+      <section className="relative py-20 bg-gradient-to-br from-[#e6f7fb] to-white overflow-hidden">
+        <div className="container mx-auto flex flex-col md:flex-row items-center gap-12 px-4 max-w-4xl">
+          <div className="w-full md:w-1/2 flex justify-center">
+            <img
+              src="/autor.jpg"
+              alt="Victor Bertram"
+              className="rounded-2xl shadow-2xl object-cover w-64 h-64 md:w-80 md:h-80 border-4 border-[#00BFFF] bg-white"
+            />
+          </div>
+          <div className="w-full md:w-1/2 space-y-4 text-gray-700">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#00BFFF]">
+              Victor Bertram — seu mentor nessa jornada com a IA
+            </h3>
+            <p className="text-lg md:text-xl font-semibold">
+              Sou Desenvolvedor Full Stack com mais de 4 anos de experiência prática na criação de aplicativos, sites, plataformas SaaS e micro-SaaS.
+            </p>
+            <p className="text-lg md:text-xl">
+              Domino diversas tecnologias e linguagens de programação — de JavaScript a Python, passando por React, Node.js, .NET e muito mais.
+            </p>
+            <p className="text-lg md:text-xl">
+              Já participei do desenvolvimento de projetos que somam mais de R$ 150 mil reais em faturamento, seja por lançamentos ou vendas diretas.
+            </p>
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Footer */}
-      <footer className="text-white py-4">
+      <footer className="text-white py-4 bg-[#00BFFF]">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-400">
+          <p className="text-gray-800">
             © 2024 CodinAI. Todos os direitos reservados.
           </p>
         </div>
