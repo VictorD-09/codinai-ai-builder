@@ -1,4 +1,5 @@
-import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon } from "lucide-react";
+
+import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon, Circle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CourseContent } from "@/components/CourseContent";
 import { getUrlWithUtm } from "@/utils/urlUtils";
