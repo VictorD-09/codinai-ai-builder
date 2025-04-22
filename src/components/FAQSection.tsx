@@ -8,24 +8,24 @@ import { Circle } from "lucide-react";
 
 const FAQS = [
   {
-    question: "Preciso saber programar para fazer o curso?",
-    answer: "Não! O curso é totalmente focado em pessoas sem experiência prévia em programação, guiando passo a passo e utilizando inteligência artificial."
+    question: "Em quanto tempo consigo fazer o meu projeto?",
+    answer: "Você pode criar um projeto simples em apenas alguns minutos. O curso é dividido em módulos que você pode seguir no seu ritmo. Dependendo do projeto, em poucas horas você já terá algo funcional e pronto para rodar!"
   },
   {
-    question: "Vou precisar investir em ferramentas pagas?",
-    answer: "Não. Todas as ferramentas apresentadas no curso possuem versões gratuitas, perfeitas para começar sem nenhum investimento extra."
+    question: "Posso aplicar o que aprendo para vender serviços também?",
+    answer: "Com certeza! O que você aprende no curso também pode ser usado para oferecer serviços como desenvolvedor no code, criador de MVPs ou consultor em projetos digitais."
   },
   {
-    question: "Terei acesso vitalício ao conteúdo?",
-    answer: "Você terá acesso por 12 meses ao conteúdo e a todas as atualizações feitas durante este período, além da comunidade exclusiva."
+    question: "Preciso ter uma ideia de negócio antes de começar?",
+    answer: "Não! Se você ainda não tem uma ideia definida, mas quer aprender a usar IA para criar e vender projetos ou oferecer serviços, eu posso te ajudar a desenvolver algo do zero. O curso é focado em te ensinar a usar a inteligência artificial para criar qualquer tipo de projeto digital. Ou seja, você pode começar com uma ideia ou aprender a construir um projeto desde o início."
   },
   {
-    question: "O curso ensina a criar SaaS de verdade?",
-    answer: "Sim! Você vai aprender a criar plataformas SaaS com funcionalidades reais, incluindo login, painel de usuário, pagamentos e integrações."
+    question: "Esse curso é para mim mesmo que eu nunca tenha trabalhado com tecnologia?",
+    answer: "Sim! O conteúdo foi pensado justamente para quem quer entrar no mundo tech mesmo sem nenhuma base. Tudo é explicado de forma simples, com apoio da inteligência artificial e o professor claro."
   },
   {
-    question: "Como posso tirar dúvidas durante o curso?",
-    answer: "Você terá acesso ao grupo exclusivo no WhatsApp e suporte direto com o professor para ajudar em qualquer etapa da sua jornada."
+    question: "Vou conseguir lançar meu projeto mesmo sem equipe?",
+    answer: "Sim! Você vai aprender a construir e lançar projetos sozinho, usando ferramentas que automatizam boa parte do processo."
   }
 ];
 

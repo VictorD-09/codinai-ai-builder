@@ -14,7 +14,7 @@ const PricingCard = () => {
           <span className="text-4xl font-bold text-[#00BFFF]">R$197,00</span>
           <span className="text-gray-500 ml-2">à vista</span>
         </div>
-        <p className='text-lg text-gray-500'>ou 12x R$20,37</p>
+        <p className='text-lg text-gray-500'>ou 12x R$20,37 no cartão</p>
       </CardHeader>
     
     </Card>
