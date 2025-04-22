@@ -1,5 +1,5 @@
 
-import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon, Circle } from "lucide-react";
+import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CourseContent } from "@/components/CourseContent";
 import { getUrlWithUtm } from "@/utils/urlUtils";
@@ -63,19 +63,29 @@ export default function Index() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] mb-6">
-              Oferta Especial para novos integrantes
+              Aprenda do básico até o avançado de criação de projetos
             </h2>
-
           </div>
           <div className="relative z-20 flex justify-center">
             <PricingCard />
           </div>
           <div className="bg-[#00BFFF] text-gray-800 rounded-xl p-8 mt-[-2rem] relative z-0 shadow-lg border border-gray-100">
             <ul className="space-y-4 mt-6 text-left mb-8">
-              {["Acesso completo ao curso CodinAI", "Módulos práticos com mais de 30 aulas", "Atualizações vitalícias com novas ferramentas", "Comunidade exclusiva no Whatsapp", "Suporte direto com o professor", "Credito de $200 num servidor para você rodar seu projeto sem custo por 60 dias","Bônus: Templates prontos para usar", "Bônus: Biblioteca de prompts validados"].map((item, index) => <li key={index} className="flex items-center gap-3 text-lg">
-                <Circle className="h-4 w-4 text-gray-800" />
-                <span className="text-gray-800 font-semibold">{item}</span>
-              </li>)}
+              {[
+                "Acesso completo ao curso CodinAI",
+                "Módulos práticos com mais de 30 aulas",
+                "Atualizações vitalícias com novas ferramentas",
+                "Comunidade exclusiva no Whatsapp",
+                "Suporte direto com o professor",
+                "Credito de $200 num servidor para você rodar seu projeto sem custo por 60 dias",
+                "Bônus: Templates prontos para usar",
+                "Bônus: Biblioteca de prompts validados"
+              ].map((item, index) => (
+                <li key={index} className="flex items-center gap-3 text-lg">
+                  <Check className="h-5 w-5 text-gray-800" />
+                  <span className="text-gray-800 font-semibold">{item}</span>
+                </li>
+              ))}
             </ul>
             <Button onClick={handleCtaClick} className="w-full bg-green-600 hover:bg-green-500/90  hover:text-white text-white py-6 text-lg">
               Quero começar agora
@@ -83,7 +93,6 @@ export default function Index() {
           </div>
           <div className="text-center mb-4">
             <p className="text-lg text-gray-300 mt-4">
-
               Esta curso tem garantia de 7 dias. Se você não gostar, não conseguir aprender ou não achar que valeu a pena, basta solicitar o reembolso e devolveremos seu dinheiro. Sem perguntas, sem complicações.
             </p>
           </div>
