@@ -13,14 +13,15 @@ const offers = [
     withCommunity: true,
     checkout: "https://pay.kiwify.com.br/ffU3D5d",
     benefits: [
+      { label: "Comunidade exclusiva no Whatsapp", icon: Users },
+      { label: "Suporte direto com o professor", icon: Users },
       { label: "Acesso completo ao curso CodinAI", icon: Check },
       { label: "Módulos práticos com mais de 30 aulas", icon: RocketIcon },
       { label: "Atualizações vitalícias com novas ferramentas", icon: Check },
-      { label: "Suporte direto com o professor", icon: Users },
       { label: "Crédito de $200 num servidor para você rodar seu projeto sem custo por 60 dias", icon: DollarSign },
       { label: "Bônus: Templates prontos para usar", icon: CircleCheck },
       { label: "Bônus: Biblioteca de prompts validados", icon: CircleCheck },
-      { label: "Comunidade exclusiva no Whatsapp", icon: Users },
+   
     ],
     highlight: "Mais recomendado",
   },
@@ -33,37 +34,18 @@ const offers = [
     withCommunity: false,
     checkout: "https://pay.kiwify.com.br/Pu7JTax",
     benefits: [
+      { label: "Sem acesso à comunidade", icon: CircleX },
+      { label: "Suporte dentro do curso", icon: Users },
       { label: "Acesso completo ao curso CodinAI", icon: Check },
       { label: "Módulos práticos com mais de 30 aulas", icon: RocketIcon },
       { label: "Atualizações vitalícias com novas ferramentas", icon: Check },
-      { label: "Suporte direto com o professor", icon: Users },
       { label: "Crédito de $200 num servidor para você rodar seu projeto sem custo por 60 dias", icon: DollarSign },
       { label: "Bônus: Templates prontos para usar", icon: CircleCheck },
       { label: "Bônus: Biblioteca de prompts validados", icon: CircleCheck },
-      { label: "Sem acesso à comunidade", icon: CircleX },
+
     ],
     highlight: "",
-  },
-  {
-    title: "Acesso por 12 meses (Extra)",
-    price: "R$97,00",
-    upfront: "à vista",
-    installments: "ou 12x R$10,03 no cartão",
-    oldPrice: "R$497",
-    withCommunity: false,
-    checkout: "https://pay.kiwify.com.br/Pu7JTax",
-    benefits: [
-      { label: "Acesso completo ao curso CodinAI", icon: Check },
-      { label: "Módulos práticos com mais de 30 aulas", icon: RocketIcon },
-      { label: "Atualizações vitalícias com novas ferramentas", icon: Check },
-      { label: "Suporte direto com o professor", icon: Users },
-      { label: "Crédito de $200 num servidor para você rodar seu projeto sem custo por 60 dias", icon: DollarSign },
-      { label: "Bônus: Templates prontos para usar", icon: CircleCheck },
-      { label: "Bônus: Biblioteca de prompts validados", icon: CircleCheck },
-      { label: "Sem acesso à comunidade", icon: CircleX },
-    ],
-    highlight: "",
-  },
+  }
 ];
 
 const PricingCard = () => {
@@ -81,7 +63,7 @@ const PricingCard = () => {
               {offer.highlight}
             </span>
           )}
-          <CardHeader className="text-center p-6 pb-0">
+          <CardHeader className="text-center p-6 pt-10 pb-0">
             <p className="text-lg font-bold text-gray-600 uppercase">{offer.title}</p>
             <p className="text-sm text-gray-300 mt-2">
               <s>De {offer.oldPrice}</s> por apenas
@@ -110,7 +92,7 @@ const PricingCard = () => {
               })}
             </ul>
             <Button
-              className="w-full bg-[#00BFFF] text-white hover:bg-[#0099cc] text-lg font-bold py-3 mt-2"
+              className="w-full bg-green-500 text-white hover:bg-[#0099cc] text-lg font-bold py-3 mt-2"
               asChild
             >
               <a href={offer.checkout} target="_blank" rel="noopener noreferrer">
