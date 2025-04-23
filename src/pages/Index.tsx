@@ -21,10 +21,10 @@ export default function Index() {
         <div className="text-center max-w-4xl mx-auto pt-10">
           <img className="mx-auto" width="220" src="/logo.png" alt="logo" />
           <h1 className="text-3xl md:text-6xl font-bold text-[#00BFFF] mb-6">
-            Domine a IA e Crie Qualquer Projeto Digital do Zero — Mesmo Sem Saber Programar
+            Dê Vida às Suas Ideias com IA — Crie Projetos Digitais que Podem Virar Negócio
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-8">
-            No curso, você aprende a usar IA gratuita para criar sites, páginas de vendas, aplicativos e até SaaS, apenas descrevendo o que quer.
+            Mesmo sem saber programar, você vai aprender a usar IA para desenvolver sites, landing pages, aplicativos e até MVPs de startups. Tudo pronto para testar, validar ou até vender.
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function Index() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] text-center mb-12">
-            É sua Oportunidade para tirar seus projetos do papel ou vender projetos feitos com IA
+          Não é só um curso — é um convite pra testar ideias, lançar projetos e até vender o que você criar.
           </h2>
           <Timeline />
         </div>
@@ -48,7 +48,7 @@ export default function Index() {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-[#00BFFF] mb-12">
-         Veja parte do conteúdo do curso CodinAI que você ter acesso
+          Veja parte do conteúdo do CodinAI que você ter acesso
         </h2>
         <CourseContent />
         <p className="text-center mt-8 font-semibold text-gray-300">
@@ -63,13 +63,13 @@ export default function Index() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] mb-6">
-              Aprenda do básico até o avançado de criação de projetos
+            Você vai sair do curso com projetos prontos, novas habilidades e até ideias que podem virar negocios.
             </h2>
           </div>
           <div className="relative z-20 flex justify-center">
             <PricingCard />
           </div>
-        
+
           <div className="text-center mb-4">
             <p className="text-lg text-gray-300 mt-4">
               Esta curso tem garantia de 7 dias. Se você não gostar, não conseguir aprender ou não achar que valeu a pena, basta solicitar o reembolso e devolveremos seu dinheiro. Sem perguntas, sem complicações.
@@ -96,7 +96,7 @@ export default function Index() {
             Sou Desenvolvedor Full Stack com mais de 4 anos de experiência prática na criação de aplicativos, sites, plataformas SaaS e micro-SaaS.
           </p>
           <p className="text-lg md:text-xl">
-           Hoje participo de projetos que ultrapassaram seis dígitos em faturamento, seja por lançamentos ou vendas recorrentes.
+            Hoje participo de projetos que ultrapassaram seis dígitos em faturamento, seja por lançamentos ou vendas recorrentes.
           </p>
         </div>
       </div>
