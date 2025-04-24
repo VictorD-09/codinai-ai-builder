@@ -34,7 +34,7 @@ const Testimonials = () => {
     <section className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-b from-cyan-400 to-blue-600 text-transparent bg-clip-text">
             O que os alunos estão dizendo
           </h2>
           <p className="text-xl text-gray-300">

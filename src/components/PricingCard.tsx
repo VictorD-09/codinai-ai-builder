@@ -3,9 +3,29 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Users, Check, DollarSign, RocketIcon, CircleCheck, CircleDollarSign, CircleX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const offers = [
+const offers = [ {
+  title: "Acesso Vitalicio",
+  price: "R$97,00",
+  upfront: "à vista",
+  installments: "ou 12x R$10,03 no cartão",
+  oldPrice: "R$497",
+  withCommunity: false,
+  checkout: "https://pay.kiwify.com.br/Pu7JTax",
+  benefits: [
+    { label: "Sem acesso à comunidade", icon: CircleX },
+    { label: "Suporte dentro do curso", icon: Users },
+    { label: "Acesso completo ao curso CodinAI", icon: Check },
+    { label: "Módulos práticos com mais de 30 aulas", icon: RocketIcon },
+    { label: "Atualizações vitalícias com novas ferramentas", icon: Check },
+    { label: "Crédito de $200 num servidor para você rodar seu projeto sem custo por 60 dias", icon: DollarSign },
+    { label: "Bônus: Templates prontos para usar", icon: CircleCheck },
+    { label: "Bônus: Biblioteca de prompts validados", icon: CircleCheck },
+
+  ],
+  highlight: "",
+},
   {
-    title: "Acesso por 12 meses + Comunidade",
+    title: "Acesso Vitalicio + Comunidade",
     price: "R$197,00",
     upfront: "à vista",
     installments: "ou 12x R$20,37 no cartão",
@@ -25,32 +45,12 @@ const offers = [
     ],
     highlight: "Mais recomendado",
   },
-  {
-    title: "Acesso por 12 meses",
-    price: "R$97,00",
-    upfront: "à vista",
-    installments: "ou 12x R$10,03 no cartão",
-    oldPrice: "R$497",
-    withCommunity: false,
-    checkout: "https://pay.kiwify.com.br/Pu7JTax",
-    benefits: [
-      { label: "Sem acesso à comunidade", icon: CircleX },
-      { label: "Suporte dentro do curso", icon: Users },
-      { label: "Acesso completo ao curso CodinAI", icon: Check },
-      { label: "Módulos práticos com mais de 30 aulas", icon: RocketIcon },
-      { label: "Atualizações vitalícias com novas ferramentas", icon: Check },
-      { label: "Crédito de $200 num servidor para você rodar seu projeto sem custo por 60 dias", icon: DollarSign },
-      { label: "Bônus: Templates prontos para usar", icon: CircleCheck },
-      { label: "Bônus: Biblioteca de prompts validados", icon: CircleCheck },
-
-    ],
-    highlight: "",
-  }
+ 
 ];
 
 const PricingCard = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row gap-8 items-center justify-center">
+    <div className="w-full flex flex-col md:flex-row gap-8 items-center justify-center" id="pricing">
       {offers.map((offer, idx) => (
         <Card
           key={idx}
@@ -96,7 +96,7 @@ const PricingCard = () => {
               asChild
             >
               <a href={offer.checkout} target="_blank" rel="noopener noreferrer">
-                Quero esse plano
+               Comprar Agora
               </a>
             </Button>
           </CardContent>

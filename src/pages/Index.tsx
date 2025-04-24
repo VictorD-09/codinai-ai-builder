@@ -22,35 +22,38 @@ export default function Index() {
     <FloatingCTA onClick={handleCtaClick} />
     
     {/* Enhanced Hero Section */}
-    <section className="relative overflow-hidden pb-16 md:pt-20 md:pb-24 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+    <section className="relative overflow-hidden pb-16 md:pt-20 md:pb-24 ">
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
         <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center mix-blend-overlay"></div>
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-5xl mx-auto pt-10">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-blue-400 mb-6 leading-tight">
-            Crie Sites, Aplicativos e Plataformas Usando Apenas a IA – Mesmo Sem Saber Programar!
+
+        <h1 className="text-4xl md:text-6xl font-extrabold  bg-gradient-to-b from-cyan-400 to-blue-600 text-transparent bg-clip-text">
+        Crie Sites, Aplicativos e Plataformas Usando Apenas a IA – Mesmo Sem Saber Programar!
+</h1>
+
+          <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-blue-400 mb-6 leading-tight">
+
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto">
             Transforme suas ideias em projetos reais sem conhecimento técnico. Aprenda a usar IA para desenvolver sites, landing pages e até mesmo MVPs de startups prontos para validar ou vender.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" onClick={handleCtaClick} className="text-white text-lg md:text-xl px-8 py-6 rounded-xl shadow-lg shadow-green-500/30 transition-all duration-300 transform hover:-translate-y-1 bg-green-600 hover:bg-green-500">
+            <Button size="lg" onClick={() => {
+          const element = document.getElementById('pricing');
+          element?.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }} className="text-white text-lg md:text-xl px-8 py-6 rounded-xl shadow-lg shadow-green-500/30 transition-all duration-300 transform hover:-translate-y-1 bg-green-600 hover:bg-green-500">
               Começar Agora 
               <ArrowRight className="ml-2" />
-            </Button>
-            
-            <Button size="lg" variant="outline" className="text-white border-white/20 backdrop-blur bg-white/10 hover:bg-white/20 text-lg md:text-xl px-8 py-6 rounded-xl" onClick={() => document.getElementById('content')?.scrollIntoView({
-              behavior: 'smooth'
-            })}>
-              Ver Conteúdo do Curso
-              <ArrowDown className="ml-2" />
             </Button>
           </div>
           <div className="flex flex-wrap justify-center gap-3 mt-8 max-w-3xl mx-auto">
             <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
               <Code className="w-4 h-4 mr-1" />
-              React
+              Bolt.New
             </Badge>
             <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
               <Database className="w-4 h-4 mr-1" />
@@ -58,7 +61,7 @@ export default function Index() {
             </Badge>
             <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
               <Globe className="w-4 h-4 mr-1" />
-              TypeScript
+              Lovable
             </Badge>
             <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
               Tailwind CSS
@@ -67,7 +70,10 @@ export default function Index() {
               Shadcn/ui
             </Badge>
             <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
-              AI Tools
+             Firebase Studio
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
+            Replit
             </Badge>
           </div>
         </div>
@@ -87,7 +93,7 @@ export default function Index() {
           <img src="/autor.jpg" alt="Victor Bertram" className="rounded-2xl shadow-2xl border-4 border-[#00BFFF] bg-white object-cover" />
         </div>
         <div className="w-full md:w-3/5 space-y-6 text-gray-700">
-          <h3 className="text-3xl md:text-4xl font-bold text-[#00BFFF]">
+          <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-b from-cyan-400 to-blue-600 text-transparent bg-clip-text">
             Victor Bertram — seu mentor nessa jornada
           </h3>
           
@@ -100,8 +106,13 @@ export default function Index() {
           <p className="text-lg md:text-xl">
             Hoje participo de projetos que ultrapassaram <span className="font-bold">seis dígitos em faturamento</span>, seja por lançamentos ou vendas recorrentes.
           </p>
-          <Button onClick={handleCtaClick} className="text-white bg-green-600 hover:bg-green-500">
-            Quero aprender com o Victor
+          <Button onClick={() => {
+          const element = document.getElementById('pricing');
+          element?.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }} className="text-white py-8 w-full  text-lg bg-green-600 hover:bg-green-500">
+            Quero aprender com o você
             <ArrowRight className="ml-2" />
           </Button>
         </div>
@@ -120,7 +131,12 @@ export default function Index() {
           {/* Mid-page CTA */}
           <div className="mt-12 text-center">
             <p className="text-xl font-medium text-gray-700 mb-4">👉 Já quer começar? Clique abaixo para garantir sua vaga </p>
-            <Button onClick={handleCtaClick} className="text-white text-lg px-8 py-3 rounded-lg bg-green-950 hover:bg-green-800">
+            <Button onClick={() => {
+          const element = document.getElementById('pricing');
+          element?.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }} className="text-white text-lg px-8 py-3 rounded-lg bg-green-950 hover:bg-green-800">
               Garantir minha vaga agora
               <Sparkles className="ml-2" />
             </Button>
@@ -140,13 +156,6 @@ export default function Index() {
           Todas as ferramentas utilizadas possuem planos gratuitos, perfeitos para quem está começando sem investir em ferramentas caras.
         </p>
         
-        {/* Content Section CTA */}
-        <div className="mt-12 text-center w-full">
-          <Button onClick={handleCtaClick} className="text-white text-lg px-8 py-3 rounded-lg bg-green-600 hover:bg-green-500">
-            Quero dominar essas ferramentas
-            <ArrowRight className="ml-2" />
-          </Button>
-        </div>
       </div>
     </section>
 

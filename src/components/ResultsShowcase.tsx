@@ -69,7 +69,7 @@ const ResultsShowcase = () => {
   return <section className="py-16 bg-gradient-to-b from-gray-800 to-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-text bg-gradient-to-r from-[#c0c0c0] via-[#ffffff] to-[#c0c0c0] bg-clip-text text-transparent bg-300% hover:bg-gradient-to-l transition-all duration-200">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-b from-cyan-400 to-blue-600 text-transparent bg-clip-text">
             Veja exemplos do que você pode criar com o CodinAI – mesmo sem saber programar
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -83,7 +83,7 @@ const ResultsShowcase = () => {
               <CardHeader>
                 <div className="flex items-center gap-3 mb-2">
                   <project.icon className="w-6 h-6 text-[#00BFFF]" />
-                  <CardTitle className="text-xl animate-text bg-gradient-to-r from-[#a0a0a0] via-[#f0f0f0] to-[#a0a0a0] bg-clip-text text-transparent bg-300% hover:bg-gradient-to-l transition-all duration-200">
+                  <CardTitle className="text-xl  bg-gradient-to-b from-cyan-400 to-blue-600 text-transparent bg-clip-text">
                     {project.name}
                   </CardTitle>
                 </div>
@@ -112,8 +112,8 @@ const ResultsShowcase = () => {
           element?.scrollIntoView({
             behavior: 'smooth'
           });
-        }} className="text-white font-semibold bg-green-600 hover:bg-green-500">
-            Quero criar meus projetos
+        }} className="text-white w-full text-lg py-8 font-semibold bg-green-600 hover:bg-green-500">
+          Quero começar
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
