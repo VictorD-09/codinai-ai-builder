@@ -49,10 +49,7 @@ export default function Index() {
             </Button>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/10 shadow-xl">
-            <CountdownTimer />
-            <p className="text-white/80 mt-2">Oferta por tempo limitado! Vagas restritas para manter suporte individualizado.</p>
-          </div>
+          
         </div>
       </div>
     </section>
