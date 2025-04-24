@@ -1,6 +1,81 @@
 
 import React from 'react';
-import { Check } from 'lucide-react';
+import { ArrowRight, Layout, Briefcase, PiggyBank, ListChecks, CalendarDays, ClipboardCheck, ShoppingCart, MiniSaas, Checklist, Calculator } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+
+const projects = [
+  {
+    icon: Layout,
+    name: "Landing Page Profissional",
+    description: "Crie páginas de captura atraentes para divulgar seus serviços e conquistar clientes.",
+    example: "Perfeito para consultórios médicos, dentistas, psicólogos e outros profissionais autônomos",
+    tags: ["Marketing Digital", "Vendas", "React", "Tailwind"]
+  },
+  {
+    icon: Briefcase,
+    name: "CRM Simplificado",
+    description: "Sistema para gerenciar clientes, leads e acompanhar vendas de forma descomplicada.",
+    example: "Ideal para pequenas empresas, escritórios de advocacia e consultorias",
+    tags: ["Gestão", "Vendas", "React Query", "Database"]
+  },
+  {
+    icon: PiggyBank,
+    name: "Controle Financeiro",
+    description: "Aplicativo para controlar receitas, despesas e gerar relatórios financeiros.",
+    example: "Perfeito para MEIs, autônomos e controle pessoal",
+    tags: ["Finanças", "Relatórios", "Charts", "API"]
+  },
+  {
+    icon: ListChecks,
+    name: "Quiz Diagnóstico",
+    description: "Crie questionários interativos que geram diagnósticos personalizados.",
+    example: "Excelente para coaches, consultores e profissionais de marketing",
+    tags: ["Lead Generation", "Marketing", "React", "Forms"]
+  },
+  {
+    icon: CalendarDays,
+    name: "Sistema de Agendamento",
+    description: "Plataforma para gerenciar horários, clientes e serviços automaticamente.",
+    example: "Ideal para salões de beleza, clínicas e profissionais que atendem com hora marcada",
+    tags: ["Serviços", "Automação", "Calendar", "Database"]
+  },
+  {
+    icon: ClipboardCheck,
+    name: "Portfólio Digital",
+    description: "Site profissional para mostrar seus trabalhos e conquistar mais projetos.",
+    example: "Perfeito para designers, desenvolvedores e criativos freelancers",
+    tags: ["Portfolio", "Marketing", "Gallery", "React"]
+  },
+  {
+    icon: ShoppingCart,
+    name: "Site de Vendas",
+    description: "Loja virtual completa com carrinho e checkout para vender seus produtos.",
+    example: "Ótimo para artesãos, produtores digitais e pequenos comércios",
+    tags: ["E-commerce", "Vendas", "Payments", "API"]
+  },
+  {
+    icon: MiniSaas,
+    name: "Mini SaaS de Hábitos",
+    description: "App para usuários acompanharem metas e desenvolverem hábitos positivos.",
+    example: "Ideal para coaches de produtividade e consultores de desenvolvimento pessoal",
+    tags: ["SaaS", "Produtividade", "React", "Database"]
+  },
+  {
+    icon: Checklist,
+    name: "Checklist Interativo",
+    description: "Sistema de checklists personalizados para acompanhamento de processos.",
+    example: "Perfeito para consultores, agências e gestão de projetos",
+    tags: ["Processos", "Gestão", "React", "Forms"]
+  },
+  {
+    icon: Calculator,
+    name: "Calculadora Especializada",
+    description: "Ferramentas de cálculo personalizadas para seu nicho de mercado.",
+    example: "Excelente para nutricionistas, consultores financeiros e profissionais técnicos",
+    tags: ["Ferramentas", "Conversão", "React", "Calculator"]
+  }
+];
 
 const ResultsShowcase = () => {
   return (
@@ -8,90 +83,58 @@ const ResultsShowcase = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#00BFFF] mb-4">
-            Veja o que você pode criar com IA
+            Veja o que você pode criar com o CodinAI – mesmo sem saber programar
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Da ideia ao produto final, usando apenas prompts e ferramentas no-code potencializadas por IA
+            Transforme suas ideias em projetos reais usando apenas IA. Sem código, sem complicação – apenas descreva o que precisa!
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Example 1: Landing Page */}
-          <div className="bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-700 transform transition-all hover:-translate-y-2">
-            <div className="aspect-video relative">
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 z-10"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
-                alt="Landing page example" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-6 relative">
-              <h3 className="text-2xl font-bold text-white mb-3">
-                Landing Pages Profissionais
-              </h3>
-              <div className="flex flex-col gap-3 mb-4">
-                <div className="flex items-start gap-3">
-                  <Check className="text-green-500 shrink-0 mt-1" />
-                  <p className="text-gray-300">Crie landing pages completas com apenas alguns comandos de IA</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {projects.map((project, index) => (
+            <Card key={index} className="bg-gray-800 border-gray-700 text-white hover:border-[#00BFFF] transition-all duration-300 hover:-translate-y-1">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <project.icon className="w-6 h-6 text-[#00BFFF]" />
+                  <CardTitle className="text-xl">{project.name}</CardTitle>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Check className="text-green-500 shrink-0 mt-1" />
-                  <p className="text-gray-300">Design moderno e responsivo para desktop e mobile</p>
+                <CardDescription className="text-gray-300">
+                  {project.description}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-400 mb-3">
+                  {project.example}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className="text-xs px-2 py-1 rounded-full bg-gray-700 text-gray-300"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
-                <div className="flex items-start gap-3">
-                  <Check className="text-green-500 shrink-0 mt-1" />
-                  <p className="text-gray-300">Integre com ferramentas de pagamento, email marketing e analytics</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Example 2: Web Application */}
-          <div className="bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-700 transform transition-all hover:-translate-y-2">
-            <div className="aspect-video relative">
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90 z-10"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
-                alt="Web application example" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-6 relative">
-              <h3 className="text-2xl font-bold text-white mb-3">
-                Aplicativos Web Funcionais
-              </h3>
-              <div className="flex flex-col gap-3 mb-4">
-                <div className="flex items-start gap-3">
-                  <Check className="text-green-500 shrink-0 mt-1" />
-                  <p className="text-gray-300">Desenvolva aplicativos web com login, cadastro e painel de usuário</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Check className="text-green-500 shrink-0 mt-1" />
-                  <p className="text-gray-300">Crie MVPs para validar suas ideias de negócio rapidamente</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Check className="text-green-500 shrink-0 mt-1" />
-                  <p className="text-gray-300">Integre funcionalidades como pagamentos, notificações e muito mais</p>
-                </div>
-              </div>
-            </div>
-          </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
-        
-        {/* Video Demonstration */}
-        <div className="mt-16 max-w-3xl mx-auto bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-700">
-          <div className="aspect-video bg-gray-900 flex items-center justify-center">
-            <div className="text-center p-8">
-              <p className="text-xl text-gray-300 mb-4">Vídeo demonstração de criação de projeto com IA</p>
-              <div className="w-16 h-16 rounded-full bg-[#00BFFF] flex items-center justify-center mx-auto cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8 text-white">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-            </div>
-          </div>
+
+        <div className="mt-16 text-center">
+          <p className="text-xl text-gray-300 mb-6">
+            E o melhor: você vai criar tudo isso apenas descrevendo para a IA o que quer – e ela vai construir pra você.
+          </p>
+          <Button 
+            onClick={() => {
+              const element = document.getElementById('pricing');
+              element?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="bg-[#00BFFF] hover:bg-blue-500 text-white font-semibold"
+          >
+            Quero criar meus projetos
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
         </div>
       </div>
     </section>
