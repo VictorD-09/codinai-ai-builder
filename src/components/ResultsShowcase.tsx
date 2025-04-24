@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ArrowRight, Layout, Briefcase, PiggyBank, ListChecks, CalendarDays, ClipboardCheck, ShoppingCart, MiniSaas, Checklist, Calculator } from 'lucide-react';
+import { ArrowRight, Layout, Briefcase, PiggyBank, ListChecks, CalendarDays, ClipboardCheck, ShoppingCart, Layers, Checklist, Calculator } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -55,7 +54,7 @@ const projects = [
     tags: ["E-commerce", "Vendas", "Payments", "API"]
   },
   {
-    icon: MiniSaas,
+    icon: Layers,
     name: "Mini SaaS de Hábitos",
     description: "App para usuários acompanharem metas e desenvolverem hábitos positivos.",
     example: "Ideal para coaches de produtividade e consultores de desenvolvimento pessoal",
