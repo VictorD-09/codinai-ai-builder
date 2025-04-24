@@ -1,5 +1,6 @@
-import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon, Clock, ArrowDown, Sparkles, Circle } from "lucide-react";
+import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon, Clock, ArrowDown, Sparkles, Circle, Code, Database, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { CourseContent } from "@/components/CourseContent";
 import { getUrlWithUtm } from "@/utils/urlUtils";
 import PricingCard from "@/components/PricingCard";
@@ -10,11 +11,13 @@ import CountdownTimer from "@/components/CountdownTimer";
 import ResultsShowcase from "@/components/ResultsShowcase";
 import FloatingCTA from "@/components/FloatingCTA";
 import "../styles/timeline.css";
+
 export default function Index() {
   const handleCtaClick = () => {
     const url = getUrlWithUtm("https://pay.kiwify.com.br/ffU3D5d");
     window.location.href = url;
   };
+
   return <div className="min-h-screen bg-gray-900 relative">
     <FloatingCTA onClick={handleCtaClick} />
     
@@ -25,16 +28,12 @@ export default function Index() {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-5xl mx-auto pt-10">
-          
-          
           <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-blue-400 mb-6 leading-tight">
             Crie Sites, Aplicativos e Plataformas Usando Apenas a IA – Mesmo Sem Saber Programar!
           </h1>
-          
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto">
             Transforme suas ideias em projetos reais sem conhecimento técnico. Aprenda a usar IA para desenvolver sites, landing pages e até mesmo MVPs de startups prontos para validar ou vender.
           </p>
-          
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
             <Button size="lg" onClick={handleCtaClick} className="text-white text-lg md:text-xl px-8 py-6 rounded-xl shadow-lg shadow-green-500/30 transition-all duration-300 transform hover:-translate-y-1 bg-green-600 hover:bg-green-500">
               Começar Agora 
@@ -48,8 +47,29 @@ export default function Index() {
               <ArrowDown className="ml-2" />
             </Button>
           </div>
-          
-          
+          <div className="flex flex-wrap justify-center gap-3 mt-8 max-w-3xl mx-auto">
+            <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
+              <Code className="w-4 h-4 mr-1" />
+              React
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
+              <Database className="w-4 h-4 mr-1" />
+              Supabase
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
+              <Globe className="w-4 h-4 mr-1" />
+              TypeScript
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
+              Tailwind CSS
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
+              Shadcn/ui
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-white/10 hover:bg-white/20 backdrop-blur-sm border-white/20 text-white">
+              AI Tools
+            </Badge>
+          </div>
         </div>
       </div>
     </section>
