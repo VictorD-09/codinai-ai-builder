@@ -1,4 +1,3 @@
-
 import { ArrowRight, Check, Star, MessageSquare, Users, RocketIcon, Clock, ArrowDown, Sparkles, Circle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CourseContent } from "@/components/CourseContent";
@@ -11,13 +10,11 @@ import CountdownTimer from "@/components/CountdownTimer";
 import ResultsShowcase from "@/components/ResultsShowcase";
 import FloatingCTA from "@/components/FloatingCTA";
 import "../styles/timeline.css";
-
 export default function Index() {
   const handleCtaClick = () => {
     const url = getUrlWithUtm("https://pay.kiwify.com.br/ffU3D5d");
     window.location.href = url;
   };
-
   return <div className="min-h-screen bg-gray-900 relative">
     <FloatingCTA onClick={handleCtaClick} />
     
@@ -28,7 +25,7 @@ export default function Index() {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-5xl mx-auto pt-10">
-          <img className="mx-auto mb-6" width="220" src="/logo.png" alt="logo" />
+          
           
           <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00BFFF] to-blue-400 mb-6 leading-tight">
             Crie Sites, Aplicativos e Plataformas Usando Apenas a IA – Mesmo Sem Saber Programar!
@@ -39,21 +36,14 @@ export default function Index() {
           </p>
           
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
-              onClick={handleCtaClick}
-              className="bg-[#F97316] hover:bg-orange-600 text-white text-lg md:text-xl px-8 py-6 rounded-xl shadow-lg shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-1"
-            >
+            <Button size="lg" onClick={handleCtaClick} className="text-white text-lg md:text-xl px-8 py-6 rounded-xl shadow-lg shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-1 bg-green-600 hover:bg-green-500">
               Começar Agora 
               <ArrowRight className="ml-2" />
             </Button>
             
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="text-white border-white/20 backdrop-blur bg-white/10 hover:bg-white/20 text-lg md:text-xl px-8 py-6 rounded-xl"
-              onClick={() => document.getElementById('content')?.scrollIntoView({behavior: 'smooth'})}
-            >
+            <Button size="lg" variant="outline" className="text-white border-white/20 backdrop-blur bg-white/10 hover:bg-white/20 text-lg md:text-xl px-8 py-6 rounded-xl" onClick={() => document.getElementById('content')?.scrollIntoView({
+              behavior: 'smooth'
+            })}>
               Ver Conteúdo do Curso
               <ArrowDown className="ml-2" />
             </Button>
@@ -83,10 +73,7 @@ export default function Index() {
           <h3 className="text-3xl md:text-4xl font-bold text-[#00BFFF]">
             Victor Bertram — seu mentor nessa jornada
           </h3>
-          <div className="flex items-center gap-2 mb-4">
-            <Check className="text-green-500" />
-            <p className="font-medium">Desenvolvedor full stack com +4 anos de experiência</p>
-          </div>
+          
           <p className="text-lg md:text-xl">
             <span className="font-semibold italic">"Você já pensou que sua ideia poderia virar um negócio, mas travou por não saber programar? Eu criei o CodinAI exatamente pra você."</span>
           </p>
@@ -96,7 +83,7 @@ export default function Index() {
           <p className="text-lg md:text-xl">
             Hoje participo de projetos que ultrapassaram <span className="font-bold">seis dígitos em faturamento</span>, seja por lançamentos ou vendas recorrentes.
           </p>
-          <Button onClick={handleCtaClick} className="bg-[#F97316] hover:bg-orange-600 text-white">
+          <Button onClick={handleCtaClick} className="text-white bg-green-600 hover:bg-green-500">
             Quero aprender com o Victor
             <ArrowRight className="ml-2" />
           </Button>
@@ -115,11 +102,8 @@ export default function Index() {
           
           {/* Mid-page CTA */}
           <div className="mt-12 text-center">
-            <p className="text-xl font-medium text-gray-700 mb-4">👉 Já quer começar? Clique abaixo para garantir sua vaga com desconto!</p>
-            <Button 
-              onClick={handleCtaClick}
-              className="bg-[#F97316] hover:bg-orange-600 text-white text-lg px-8 py-3 rounded-lg"
-            >
+            <p className="text-xl font-medium text-gray-700 mb-4">👉 Já quer começar? Clique abaixo para garantir sua vaga </p>
+            <Button onClick={handleCtaClick} className="text-white text-lg px-8 py-3 rounded-lg bg-green-950 hover:bg-green-800">
               Garantir minha vaga agora
               <Sparkles className="ml-2" />
             </Button>
@@ -140,11 +124,8 @@ export default function Index() {
         </p>
         
         {/* Content Section CTA */}
-        <div className="mt-12 text-center">
-          <Button 
-            onClick={handleCtaClick}
-            className="bg-[#F97316] hover:bg-orange-600 text-white text-lg px-8 py-3 rounded-lg"
-          >
+        <div className="mt-12 text-center w-full">
+          <Button onClick={handleCtaClick} className="text-white text-lg px-8 py-3 rounded-lg bg-green-600 hover:bg-green-500">
             Quero dominar essas ferramentas
             <ArrowRight className="ml-2" />
           </Button>
