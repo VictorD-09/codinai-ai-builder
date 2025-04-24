@@ -36,7 +36,7 @@ export default function Index() {
           </p>
           
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" onClick={handleCtaClick} className="text-white text-lg md:text-xl px-8 py-6 rounded-xl shadow-lg shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-1 bg-green-600 hover:bg-green-500">
+            <Button size="lg" onClick={handleCtaClick} className="text-white text-lg md:text-xl px-8 py-6 rounded-xl shadow-lg shadow-green-500/30 transition-all duration-300 transform hover:-translate-y-1 bg-green-600 hover:bg-green-500">
               Começar Agora 
               <ArrowRight className="ml-2" />
             </Button>
