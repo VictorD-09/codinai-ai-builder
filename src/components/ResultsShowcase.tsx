@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Layout, Briefcase, PiggyBank, ListChecks, CalendarDays, ClipboardCheck, ShoppingCart, Layers, Checklist, Calculator } from 'lucide-react';
+import { ArrowRight, Layout, Briefcase, PiggyBank, ListChecks, CalendarDays, ClipboardCheck, ShoppingCart, Layers, List, Calculator } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -61,7 +61,7 @@ const projects = [
     tags: ["SaaS", "Produtividade", "React", "Database"]
   },
   {
-    icon: Checklist,
+    icon: List,
     name: "Checklist Interativo",
     description: "Sistema de checklists personalizados para acompanhamento de processos.",
     example: "Perfeito para consultores, agências e gestão de projetos",
