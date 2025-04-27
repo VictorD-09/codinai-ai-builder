@@ -34,7 +34,7 @@ const Testimonials = () => {
     <section className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-b from-cyan-400 to-blue-600 text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-4xl font-bold animate-text bg-300% bg-gradient-to-b from-cyan-400 to-blue-600 text-transparent bg-clip-text mb-6">
             O que os alunos estão dizendo
           </h2>
           <p className="text-xl text-gray-300">
@@ -44,7 +44,7 @@ const Testimonials = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-xl relative">
+            <div key={testimonial.id} className="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-xl relative hover:border-[#00BFFF] transition-all duration-300 hover:-translate-y-1">
               <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-4">
                   <img 
