@@ -4,29 +4,38 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    id: 1,
-    name: "Carlos Silva",
-    role: "Empresário",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&q=80",
-    content: "Nunca achei que conseguiria criar meu próprio app, mas com o CodinAI eu fiz isso em 2 dias! Agora estou validando minha ideia com usuários reais.",
+    id: 4,
+    name: "Anderson Costa",
+    role: "Ex-Desempregado",
+    image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: "Estava desempregado e perdido. Com a CodinAI, criei meu próprio site de serviços em poucos dias e comecei a pegar clientes online. Hoje consigo fazer de R$2000 a R$5000 sem depender de patrão.",
     stars: 5,
   },
   {
-    id: 2,
-    name: "Ana Ferreira",
-    role: "Designer",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&q=80",
-    content: "Como designer, sempre precisei de desenvolvedores para transformar meus layouts em sites. Agora faço tudo sozinha usando IA, economizando tempo e dinheiro.",
+    id: 5,
+    name: "Marcos Ramos",
+    role: "Motorista de Aplicativo",
+    image: "https://plus.unsplash.com/premium_photo-1661371875041-41e6f1e867b8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: "Trabalho como Uber e sempre quis uma renda extra. Aprendi a criar aplicativos simples para negócios locais usando IA. Já vendi meu primeiro projeto para uma hamburgueria!",
     stars: 5,
   },
   {
-    id: 3,
-    name: "Marcos Oliveira",
-    role: "Empreendedor",
-    image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&q=80",
-    content: "Já vendi 3 projetos desenvolvidos com as técnicas que aprendi no CodinAI. Estou realmente impressionado com o quanto é possível fazer sem precisar programar.",
+    id: 6,
+    name: "Juliano Mota",
+    role: "Dono de Delivery",
+    image: "https://images.unsplash.com/photo-1673993386955-45fc437f5de9?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: "Tenho uma pizzaria e estava buscando desenvolver um cardapio digital próprio pensei que deveria gastar muito dinheiro. Usando a CodinAI, criei o meu em 3 dias sem gastar com agência ou desenvolvedores. As vendas dobraram no mês seguinte.",
+    stars: 5,
+  },
+  {
+    id: 7,
+    name: "Renata Alencar",
+    role: "Manicure e Designer de Unhas",
+    image: "https://plus.unsplash.com/premium_photo-1677434519189-c37c1bb6b848?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: "Sempre dependi do Instagram para divulgar meu trabalho. Agora tenho meu próprio site e app de agendamento criado com IA, onde agendo clientes direto e passo muito mais confiança e meu processo fico muito melhor.",
     stars: 5,
   }
+  
 ];
 
 const Testimonials = () => {
