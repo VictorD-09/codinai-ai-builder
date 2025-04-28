@@ -21,7 +21,7 @@ export default function Index() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-b from-cyan-400 to-blue-600 animate-text bg-300% text-transparent bg-clip-text mb-6 leading-tight">
-            Crie e Lucre com Projetos Digitais Usando Apenas Inteligência Artificial! </h1>
+            Crie e Lucre com Projetos Digitais Usando Apenas Inteligência Artificial!</h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto">
             Domine a nova era da tecnologia e construa sites, apps e micro-SaaS do zero — mesmo que você nunca tenha programado antes. </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-8">
