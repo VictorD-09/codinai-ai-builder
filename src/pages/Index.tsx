@@ -44,7 +44,7 @@ export default function Index() {
           <p> Quem entende e aprende a como usar AI para Criar, consegue lançar ideias, montar negócios e atender clientes em tempo recorde — tudo sem precisar escrever uma linha de código. </p>
           <div className="my-12 bg-gray-800 p-8 rounded-xl border border-gray-700">
             <div className="w-full md:w-2/5  m-auto">
-              <img src="/autor.webp" alt="Victor Bertram" className="rounded-2xl shadow-2xl border-4 border-[#00BFFF] bg-white object-cover" />
+              <img src="/autor1.webp" alt="Victor Bertram" className="rounded-2xl shadow-2xl border-4 border-[#00BFFF] bg-white object-cover" />
             </div>
 
             <p className="font-medium text-white mb-4 mt-3">
