@@ -31,7 +31,7 @@ const offers = [ {
     installments: "ou 12x R$20,37 no cartão",
     oldPrice: "R$497",
     withCommunity: true,
-    checkout: "https://pay.kiwify.com.br/ffU3D5d",
+    checkout: "https://pay.kiwify.com.br/Pu7JTax",
     benefits: [
       { label: "Comunidade exclusiva no Whatsapp", icon: Users },
       { label: "Suporte direto com o professor", icon: Users },

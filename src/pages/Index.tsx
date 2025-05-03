@@ -8,7 +8,7 @@ import FloatingCTA from "@/components/FloatingCTA";
 
 export default function Index() {
   const handleCtaClick = () => {
-    const url = getUrlWithUtm("https://pay.kiwify.com.br/ffU3D5d");
+    const url = getUrlWithUtm("https://pay.kiwify.com.br/Pu7JTax");
     window.location.href = url;
   };
 
