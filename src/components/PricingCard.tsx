@@ -10,7 +10,7 @@ const offers = [ {
   installments: "ou 12x R$10,03 no cartão",
   oldPrice: "R$497",
   withCommunity: false,
-  checkout: "https://pay.kiwify.com.br/Pu7JTax",
+  checkout: "https://go.perfectpay.com.br/PPU38CPNSDS",
   benefits: [
     { label: "Sem acesso à comunidade", icon: CircleX },
     { label: "Suporte dentro do curso", icon: Users },
@@ -31,7 +31,7 @@ const offers = [ {
     installments: "ou 12x R$20,37 no cartão",
     oldPrice: "R$497",
     withCommunity: true,
-    checkout: "https://pay.kiwify.com.br/Pu7JTax",
+    checkout: "https://go.perfectpay.com.br/PPU38CPNSDS",
     benefits: [
       { label: "Comunidade exclusiva no Whatsapp", icon: Users },
       { label: "Suporte direto com o professor", icon: Users },

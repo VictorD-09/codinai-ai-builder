@@ -8,7 +8,7 @@ import FloatingCTA from "@/components/FloatingCTA";
 
 export default function Index() {
   const handleCtaClick = () => {
-    const url = getUrlWithUtm("https://pay.kiwify.com.br/Pu7JTax");
+    const url = getUrlWithUtm("https://go.perfectpay.com.br/PPU38CPNSDS");
     window.location.href = url;
   };
 
