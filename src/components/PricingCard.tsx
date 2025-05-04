@@ -7,7 +7,7 @@ const offers = [ {
   title: "Acesso Vitalicio",
   price: "R$97,00",
   upfront: "à vista",
-  installments: "ou 12x R$10,03 no cartão",
+  installments: "ou 12x R$9,74 no cartão",
   oldPrice: "R$497",
   withCommunity: false,
   checkout: "https://go.perfectpay.com.br/PPU38CPNSDS",

@@ -201,7 +201,7 @@ export default function Index() {
                 <div className="text-center">
                   <p className="text-gray-400 ">De <b className="line-through text-[red]">R$197,00</b> por</p>
                   <div className="my-2">
-                    <span className="text-4xl font-bold text-white">R$10,03</span>
+                    <span className="text-4xl font-bold text-white">R$9,74</span>
                     <span className="text-gray-300 ml-2 text-[14px]">no cartão em 12x</span>
                   </div>
                   <p className="text-gray-300 mb-6 text-[18px] font-medium">ou R$97,00 à vista</p>
